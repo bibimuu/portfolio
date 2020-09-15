@@ -1,0 +1,75 @@
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem);
+  }
+
+  80% {
+    transform: translateX(-2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInBottomBtn {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+
+  80% {
+    transform: translateX(2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes daySky {
+  0% {
+    background: rgba(#0a1629, 0.8);
+    filter: hue-rotate(0deg);
+  }
+
+  20% {
+    background: rgba(#527e99, 0.8);
+  }
+
+  30% {
+    background: rgba(#b6d3e9, 0.5);
+  }
+
+  50% {
+    background: rgba(#aaa2be, 0.8);
+  }
+
+  60% {
+    background: rgba(#84799c, 0.8);
+  }
+
+  80% {
+    background: rgba(#2f2549, 0.8);
+  }
+
+  100% {
+    background: rgba(#0a1629, 0.8);
+    filter: hue-rotate(40deg);
+  }
+}
