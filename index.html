@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="css/icon-font.css" />
     <link rel="stylesheet" href="css/icon-font.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
@@ -16,6 +16,27 @@
     <title>PORTFOLIO</title>
   </head>
   <body>
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon"></span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">TOP</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">ABOUT ME</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">WORKS</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
     <header class="header">
       <div class="wrapper">
         <div class="header__logo-box">
@@ -35,44 +56,246 @@
 
     <main>
       <section class="section-about">
-        <div class="u-center-text u-margin-8">
-          <h2 class="heading-secondary">ABOUT ME</h2>
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">ABOUT MEEEEEEE!</h2>
         </div>
         <div class="row">
           <div class="col-1-of-2">
-            <h3 class="heading-tertiary">DAIGORO HIRAMATSU</h3>
-            <p class="paragraph"></p>
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              DAIGORO HIRAMATSU
+            </h3>
+            <p class="paragraph">
+              1997年生まれ Webデザイナー 独学でプログラミングを学び、<br />
+              2020年にエンジニアとなるも、<br />
+              Webデザインの仕事をどうしてもしたくなり退社。<br />
+              現在は、独学でプログラミングとデザインを学び、<br />
+              Webデザイナーとしての転職活動をしています。
+            </p>
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              What Is Design
+            </h3>
+            <p class="paragraph">
+              私にとってデザインとは、毎日を楽しくするものです。<br />
+              そういったデザインをする上で必要なことは、<br />
+              自分が好きと思えるデザインをすることと<br />
+              知覚のされやすさ、使いやすさを意識することだと思います。<br />
+              日々の生活で得られるちょっとした幸福を与えることを目指します。
+            </p>
           </div>
-          <div class="col-1-of-2">ss</div>
+          <div class="col-1-of-2">
+            <div class="composition">
+              <img
+                src="img/nat-1.jpg"
+                alt="photo 1"
+                class="composition__photo composition__photo--p1"
+              />
+              <img
+                src="img/nat-2.jpg"
+                alt="photo 2"
+                class="composition__photo composition__photo--p2"
+              />
+              <img
+                src="img/nat-3.jpg"
+                alt="photo 3"
+                class="composition__photo composition__photo--p3"
+              />
+            </div>
+          </div>
         </div>
-        <svg
-          class="editorial"
-          xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink"
-          viewBox="0 24 150 28"
-          preserveAspectRatio="none"
-        >
-          <defs>
-            <path
-              id="gentle-wave"
-              d="M-160 44c30 0 
-       58-18 88-18s
-       58 18 88 18 
-       58-18 88-18 
-       58 18 88 18
-       v44h-352z"
-            />
-          </defs>
-          <g class="parallax">
-            <use xlink:href="#gentle-wave" x="50" y="0" fill="#4579e2" />
-            <use xlink:href="#gentle-wave" x="50" y="3" fill="#3461c1" />
-            <use xlink:href="#gentle-wave" x="50" y="6" fill="#2d55aa" />
-          </g>
-        </svg>
-        <div class="content">
-          <h1 contenteditable="true">The deep blue</h1>
+      </section>
+
+      <section class="section-skills">
+        <div class="row">
+          <div class="col-3-of-1">
+            <div class="skill-box">
+              <i class="skill-box__icon icon-basic-picture-multiple"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                Illustrator/PhotoShop
+              </h3>
+              <p class="skill-box__text">
+                Web制作やブログに必要な画像の<br />
+                加工と制作をする事ができます。
+              </p>
+            </div>
+          </div>
+          <div class="col-3-of-1">
+            <div class="skill-box">
+              <i class="skill-box__icon icon-basic-webpage-img-txt"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">Adobe XD</h3>
+              <p class="skill-box__text">
+                どのようなWebページにするかを<br />
+                １からデザインする事ができます。<br />
+              </p>
+            </div>
+          </div>
+          <div class="col-3-of-1">
+            <div class="skill-box">
+              <i class="skill-box__icon icon-basic-keyboard"></i>
+              <h3 class="heading-tertiary u-margin-bottom-small">
+                HTML/CSS/JS(React)
+              </h3>
+              <p class="skill-box__text">
+                XDで制作したWebページを<br />
+                形にする事ができます。<br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-works">
+        <div class="u-center-text u-margin-bottom-big">
+          <h2 class="heading-secondary">WORKS</h2>
+        </div>
+        <div class="row">
+          <div class="col-3-of-1">
+            <div class="card">
+              <div class="card__slide card__slide--front">
+                <div class="card__picture card__picture--1"></div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--1"
+                    >小学生向け<br />時間割アプリ</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>skill: XD, react, firebase</li>
+                    <li>レスポンシブ未対応</li>
+                    <li>・・・</li>
+                    <li>詳細は裏面から&rarr;</li>
+                    <li></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__slide card__slide--back card__slide--back-1">
+                <div class="card__btn-box">
+                  <a href="#" class="btn btn--white">LOOK NOW</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3-of-1">
+            <div class="card">
+              <div class="card__slide card__slide--front">
+                <div class="card__picture card__picture--1"></div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--1"
+                    >メンズ美容<br />ブログ用画像</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>skill: Illustrator</li>
+                    <li>インスタグラム用</li>
+                    <li>・・・</li>
+                    <li>詳細は裏面から&rarr;</li>
+                    <li></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__slide card__slide--back card__slide--back-1">
+                <div class="card__btn-box">
+                  <a href="#" class="btn btn--white">LOOK NOW</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-3-of-1">
+            <div class="card">
+              <div class="card__slide card__slide--front">
+                <div class="card__picture card__picture--1"></div>
+                <h4 class="card__heading">
+                  <span class="card__heading-span card__heading-span--1"
+                    >鉄工所<br />ホームページ</span
+                  >
+                </h4>
+                <div class="card__details">
+                  <ul>
+                    <li>skill: sketch, vue.js</li>
+                    <li>レスポンシブ対応</li>
+                    <li>・・・</li>
+                    <li>詳細は裏面から&rarr;</li>
+                    <li></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__slide card__slide--back card__slide--back-1">
+                <div class="card__btn-box">
+                  <a href="#" class="btn btn--white">LOOK NOW</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="u-center-text u-margin-top-big">
+          <a href="#" class="btn btn--blue btn--animated">Discover my works</a>
         </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <div class="bg-video">
+        <video class="bg-video__content" autoplay muted loop>
+          <source src="img/video.mp4" type="video/mp4" />
+          <source src="img/video.webm" type="video/webm" />
+          your browser is not supported!
+        </video>
+      </div>
+      <div class="footer__logo-box">
+        <img src="img/logo.png" alt="Full logo" class="footer__logo" />
+      </div>
+
+      <div class="u-center-text">
+        <div class="footer__navigation">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="#">Top</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">About Me</a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">Works</a>
+            </li>
+          </ul>
+        </div>
+
+        <p class="footer__copyright u-margin-top-small">
+          Copyright &copy; by Daigoro Hiramatsu.
+        </p>
+      </div>
+    </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/nat-8.jpg" alt="work1" class="popup__img" />
+          <img src="img/nat-9.jpg" alt="work1" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <h2 class="heading-secondary u-margin-bottom-medium">aaa</h2>
+          <h3 class="heading-tertiary u-margin-bottom-small">sssss</h3>
+          <p class="popup__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed sed
+            risus pretium quam. Aliquam sem et tortor consequat id. Volutpat
+            odio facilisis mauris sit amet massa vitae. Mi bibendum neque
+            egestas congue. Placerat orci nulla pellentesque dignissim enim sit.
+            Vitae semper quis lectus nulla at volutpat diam ut venenatis.
+            Malesuada pellentesque elit eget gravida cum sociis natoque
+            penatibus et. Proin fermentum leo vel orci porta non pulvinar neque
+            laoreet. Gravida neque convallis a cras semper. Molestie at
+            elementum eu facilisis sed odio morbi quis. Faucibus vitae aliquet
+            nec ullamcorper sit amet risus nullam eget. Nam libero justo laoreet
+            sit. Amet massa vitae tortor condimentum lacinia quis vel eros
+            donec. Sit amet facilisis magna etiam. Imperdiet sed euismod nisi
+            porta.
+          </p>
+          <a href="#" class="btn btn--blue">LOOK NOW</a>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
