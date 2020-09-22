@@ -1,10 +1,14 @@
 .header {
-  height: 95vh;
+  height: 85vh;
   background-image: url(../img/Fuji.jpg);
   background-size: cover;
   background-position: top;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 90vh);
-  clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 90vh);
+
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 90vh);
+    clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 90vh);
+    height: 95vh;
+  }
 
   &__logo-box {
     position: absolute;

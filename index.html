@@ -8,12 +8,12 @@
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/icon-font.css" />
-    <link rel="stylesheet" href="css/icon-font.css" />
+    <!-- <link rel="stylesheet" href="css/icon-font.css" /> -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link rel="icon" type="image/png" href="img/logo.png" />
 
     <title>PORTFOLIO</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <div class="navigation">
@@ -21,23 +21,38 @@
       <label for="navi-toggle" class="navigation__button">
         <span class="navigation__icon"></span>
       </label>
-      <div class="navigation__background">&nbsp;</div>
-      <nav class="navigation__nav">
+      <div
+        class="navigation__background navigation__background--toggle"
+        id="navigation__background"
+      >
+        &nbsp;
+      </div>
+      <nav class="navigation__nav navigation__nav--toggle">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#" class="navigation__link">TOP</a>
+            <a href="#header" class="navigation__link navigation__link--js"
+              >TOP</a
+            >
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">ABOUT ME</a>
+            <a
+              href="#section-about"
+              class="navigation__link navigation__link--js"
+              >ABOUT ME</a
+            >
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">WORKS</a>
+            <a
+              href="#section-works"
+              class="navigation__link navigation__link--js"
+              >WORKS</a
+            >
           </li>
         </ul>
       </nav>
     </div>
 
-    <header class="header">
+    <header class="header" id="header">
       <div class="wrapper">
         <div class="header__logo-box">
           <img src="img/logo.png" alt="logo" class="header__logo" />
@@ -49,13 +64,15 @@
               >Design Makes Everyday Happy</span
             >
           </h1>
-          <a href="#" class="btn btn--white btn--animated">Discover my works</a>
+          <a href="#section-works" class="btn btn--white btn--animated"
+            >Discover my works</a
+          >
         </div>
       </div>
     </header>
 
     <main>
-      <section class="section-about">
+      <section class="section-about" id="section-about">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">ABOUT MEEEEEEE!</h2>
         </div>
@@ -77,7 +94,7 @@
             <p class="paragraph">
               私にとってデザインとは、毎日を楽しくするものです。<br />
               そういったデザインをする上で必要なことは、<br />
-              自分が好きと思えるデザインをすることと<br />
+              自分が誇れるデザインをすることと<br />
               知覚のされやすさ、使いやすさを意識することだと思います。<br />
               日々の生活で得られるちょっとした幸福を与えることを目指します。
             </p>
@@ -85,17 +102,17 @@
           <div class="col-1-of-2">
             <div class="composition">
               <img
-                src="img/nat-1.jpg"
+                src="img/pattern2.jpg"
                 alt="photo 1"
                 class="composition__photo composition__photo--p1"
               />
               <img
-                src="img/nat-2.jpg"
+                src="img/me.jpeg"
                 alt="photo 2"
                 class="composition__photo composition__photo--p2"
               />
               <img
-                src="img/nat-3.jpg"
+                src="img/pattern.jpg"
                 alt="photo 3"
                 class="composition__photo composition__photo--p3"
               />
@@ -143,7 +160,7 @@
         </div>
       </section>
 
-      <section class="section-works">
+      <section class="section-works" id="section-works">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">WORKS</h2>
         </div>
@@ -152,16 +169,11 @@
             <div class="card">
               <div class="card__slide card__slide--front">
                 <div class="card__picture card__picture--1"></div>
-                <h4 class="card__heading">
-                  <span class="card__heading-span card__heading-span--1"
-                    >小学生向け<br />時間割アプリ</span
-                  >
-                </h4>
                 <div class="card__details">
                   <ul>
-                    <li>skill: XD, react, firebase</li>
-                    <li>レスポンシブ未対応</li>
-                    <li>・・・</li>
+                    <li>名前：時間割アプリ</li>
+                    <li>概要:小学生用の可愛い時間割</li>
+                    <li>技術： XD, react, firebase</li>
                     <li>詳細は裏面から&rarr;</li>
                     <li></li>
                   </ul>
@@ -169,7 +181,7 @@
               </div>
               <div class="card__slide card__slide--back card__slide--back-1">
                 <div class="card__btn-box">
-                  <a href="#" class="btn btn--white">LOOK NOW</a>
+                  <a href="#popup" class="btn btn--white btn-popup">LOOK NOW</a>
                 </div>
               </div>
             </div>
@@ -178,25 +190,22 @@
           <div class="col-3-of-1">
             <div class="card">
               <div class="card__slide card__slide--front">
-                <div class="card__picture card__picture--1"></div>
-                <h4 class="card__heading">
-                  <span class="card__heading-span card__heading-span--1"
-                    >メンズ美容<br />ブログ用画像</span
-                  >
-                </h4>
+                <div class="card__picture card__picture--2"></div>
                 <div class="card__details">
                   <ul>
-                    <li>skill: Illustrator</li>
-                    <li>インスタグラム用</li>
-                    <li>・・・</li>
+                    <li>名前:美容ブログの画像</li>
+                    <li>概要:インスタグラム用の画像</li>
+                    <li>技術: Illustrator</li>
                     <li>詳細は裏面から&rarr;</li>
                     <li></li>
                   </ul>
                 </div>
               </div>
-              <div class="card__slide card__slide--back card__slide--back-1">
+              <div class="card__slide card__slide--back card__slide--back-2">
                 <div class="card__btn-box">
-                  <a href="#" class="btn btn--white">LOOK NOW</a>
+                  <a href="#popup2" class="btn btn--white btn-popup"
+                    >LOOK NOW</a
+                  >
                 </div>
               </div>
             </div>
@@ -205,32 +214,60 @@
           <div class="col-3-of-1">
             <div class="card">
               <div class="card__slide card__slide--front">
-                <div class="card__picture card__picture--1"></div>
-                <h4 class="card__heading">
-                  <span class="card__heading-span card__heading-span--1"
-                    >鉄工所<br />ホームページ</span
-                  >
-                </h4>
+                <div class="card__picture card__picture--3"></div>
                 <div class="card__details">
                   <ul>
-                    <li>skill: sketch, vue.js</li>
-                    <li>レスポンシブ対応</li>
-                    <li>・・・</li>
+                    <li>名前:飯野鉄工所HP</li>
+                    <li>概要:初めて引き受けたHP作成</li>
+                    <li>技術: sketch, vue.js</li>
                     <li>詳細は裏面から&rarr;</li>
                     <li></li>
                   </ul>
                 </div>
               </div>
-              <div class="card__slide card__slide--back card__slide--back-1">
+              <div class="card__slide card__slide--back card__slide--back-3">
                 <div class="card__btn-box">
-                  <a href="#" class="btn btn--white">LOOK NOW</a>
+                  <a href="#popup3" class="btn btn--white btn-popup"
+                    >LOOK NOW</a
+                  >
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="row dropdown">
+          <div class="col-3-of-1">
+            <div class="card">
+              <div class="card__slide card__slide--front">
+                <div class="card__picture card__picture--4"></div>
+                <div class="card__details">
+                  <ul>
+                    <li>名前:伸明工業のHP</li>
+                    <li>概要:父の会社のHP制作</li>
+                    <li>技術: XD, PhotoShop</li>
+                    <li>詳細は裏面から&rarr;</li>
+                    <li></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card__slide card__slide--back card__slide--back-1">
+                <div class="card__btn-box">
+                  <a href="#popup4" class="btn btn--white btn-popup"
+                    >LOOK NOW</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div class="u-center-text u-margin-top-big">
-          <a href="#" class="btn btn--blue btn--animated">Discover my works</a>
+          <a
+            href="javascript:void(0)"
+            class="btn btn--blue btn--animated btn-js"
+            >MORE WORKS</a
+          >
         </div>
       </section>
     </main>
@@ -251,13 +288,17 @@
         <div class="footer__navigation">
           <ul class="footer__list">
             <li class="footer__item">
-              <a class="footer__link" href="#">Top</a>
+              <a class="footer__link js-smooth-scroll" href="#header">Top</a>
             </li>
             <li class="footer__item">
-              <a class="footer__link" href="#">About Me</a>
+              <a class="footer__link js-smooth-scroll" href="#section-about"
+                >About Me</a
+              >
             </li>
             <li class="footer__item">
-              <a class="footer__link" href="#">Works</a>
+              <a class="footer__link js-smooth-scroll" href="#section-works"
+                >Works</a
+              >
             </li>
           </ul>
         </div>
@@ -271,31 +312,146 @@
     <div class="popup" id="popup">
       <div class="popup__content">
         <div class="popup__left">
-          <img src="img/nat-8.jpg" alt="work1" class="popup__img" />
-          <img src="img/nat-9.jpg" alt="work1" class="popup__img" />
+          <img src="img/XD-timeSchedule.png" alt="work1" class="popup__img" />
+          <img src="img/XD-timeSchedule2.png" alt="work1" class="popup__img" />
         </div>
         <div class="popup__right">
-          <h2 class="heading-secondary u-margin-bottom-medium">aaa</h2>
-          <h3 class="heading-tertiary u-margin-bottom-small">sssss</h3>
+          <a href="#section-works" class="popup__close"
+            ><div class="popup__close-box"></div
+          ></a>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            小学生向けの時間割アプリ
+          </h3>
           <p class="popup__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed sed
-            risus pretium quam. Aliquam sem et tortor consequat id. Volutpat
-            odio facilisis mauris sit amet massa vitae. Mi bibendum neque
-            egestas congue. Placerat orci nulla pellentesque dignissim enim sit.
-            Vitae semper quis lectus nulla at volutpat diam ut venenatis.
-            Malesuada pellentesque elit eget gravida cum sociis natoque
-            penatibus et. Proin fermentum leo vel orci porta non pulvinar neque
-            laoreet. Gravida neque convallis a cras semper. Molestie at
-            elementum eu facilisis sed odio morbi quis. Faucibus vitae aliquet
-            nec ullamcorper sit amet risus nullam eget. Nam libero justo laoreet
-            sit. Amet massa vitae tortor condimentum lacinia quis vel eros
-            donec. Sit amet facilisis magna etiam. Imperdiet sed euismod nisi
-            porta.
+            小学生向けの時間割アプリのモックアップとWEBサイトを制作しました。
+            シンプルな時間割が多い中、毎日見る時間割がもっと楽しいものになったらいいのになという思いから、
+            カラフルで好きないろに変更できる時間割を作り始めました。
+            今は、webのみですが後々はスマホ用にコードを移行していきたいです。<br /><br />
+
+            skill: adobeXD, react, firebase <br />
+            github: https://github.com/bibimuu/time-schedule-web<br />
           </p>
-          <a href="#" class="btn btn--blue">LOOK NOW</a>
+          <a
+            href="https://time-schedules-web.firebaseapp.com/signup"
+            class="btn btn--blue"
+            >WEBページへ</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="popup2">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/ai-beauty1.png" alt="work1" class="popup__img" />
+          <img src="img/ai-beauty2.png" alt="work1" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#section-works" class="popup__close"
+            ><div class="popup__close-box"></div
+          ></a>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            美容ブログの画像
+          </h3>
+          <p class="popup__text">
+            友人の美容メディアの画像を制作しています。
+            このメディアは、美容に興味のある男子学生向けということで、
+            男子学生が取っ付きやすいように、色合いを爽やかにし、清潔感を重視したデザインにしました。
+            <br /><br />
+            skill: illustrator <br />
+          </p>
+          <a
+            href="https://www.instagram.com/illumo_official/"
+            class="btn btn--blue"
+            >instagramへ</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="popup3">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/飯野鉄工所1.png" alt="work1" class="popup__img" />
+          <img src="img/飯野鉄工所2.png" alt="work1" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#section-works" class="popup__close"
+            ><div class="popup__close-box"></div
+          ></a>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            飯野鉄工所のホームページ
+          </h3>
+          <p class="popup__text">
+            飯野鉄工所のホームページのモックアップとWEBサイトを作成しました。
+            ヒアリングした際に、シンプルなものでということでしたので、白を基調としシンプルなデザインにしました。
+            レスポンシブも対応しています。
+            <br /><br />
+            skill: sketch, Vue.js <br />
+            github: https://github.com/bibimuu/homepage
+          </p>
+          <a href="https://iino-iron.work/" class="btn btn--blue"
+            >WEBページへ</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="popup4">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/shinmeiHP1.png" alt="work1" class="popup__img" />
+          <img src="img/shinmeiHP2.png" alt="work1" class="popup__img" />
+        </div>
+        <div class="popup__right">
+          <a href="#section-works" class="popup__close"
+            ><div class="popup__close-box"></div
+          ></a>
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            伸明工業のホームページ
+          </h3>
+          <p class="popup__text">
+            父の会社のホームページのモックアップです。
+            ヒヤリングをした結果、今風なとび職人のページにして欲しいとのことでしたので、古風な色を避け、
+            鮮やかな青にすることで、今っぽい雰囲気を出しました。
+            また、とび職人ということもあり、写真の彩度を濃くし、力強い雰囲気を出しました。
+            実装のしやすさを意識し、marginを揃えました。
+            <br /><br />
+            skill: adobeXD, PhotoShop<br />
+          </p>
+          <!-- <a href="" class="btn btn--blue">WEBページへ</a> -->
         </div>
       </div>
     </div>
   </body>
 </html>
+
+<script>
+  $(".navigation__link--js").on("click", function (evt) {
+    chk_status = $("#navi-toggle").prop("checked");
+    if (chk_status) {
+      $("#navi-toggle").prop("checked", false);
+    } else {
+      $("#navi-toggle").prop("checked", true);
+    }
+  });
+
+  $(".btn-js").click(function () {
+    txt = "No More Works";
+    $(this).text(txt);
+    $(this).addClass("btn--unavailable");
+    $(".dropdown").addClass("dropdown--show");
+  });
+
+  $(".popup").on("click touchend", function (event) {
+    if (!$(event.target).closest(".popup__content").length) {
+      $(this).addClass("popup-toggle");
+    }
+  });
+
+  $(".btn-popup").on("click touchend", function (event) {
+    if ($(".popup").hasClass("popup-toggle")) {
+      $(".popup").removeClass("popup-toggle");
+    }
+  });
+</script>

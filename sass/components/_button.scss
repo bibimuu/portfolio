@@ -1,7 +1,6 @@
 .btn {
   &:link,
   &:visited {
-    text-transform: uppercase;
     text-decoration: none;
     padding: 1.5rem 4rem;
     display: inline-block;
@@ -28,6 +27,16 @@
   &:active {
     transform: translateY(-0.1rem);
     box-shadow: 0 0.5rem 1rem rgba($color-black, 0.2);
+  }
+
+  &--unavailable:hover,
+  &--unavailable:active {
+    transform: none;
+    box-shadow: none;
+    &::after {
+      transform: none;
+      opacity: 1;
+    }
   }
 
   &--white {
