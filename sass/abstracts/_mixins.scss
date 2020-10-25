@@ -13,6 +13,8 @@
 // 1200-1800 pc
 // 1800- big pc
 
+//??media only screenの意味は？
+
 @mixin respond($breakpoint) {
   @if $breakpoint == phone {
     @media only screen and (max-width: 37.5em) {

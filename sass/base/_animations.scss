@@ -45,6 +45,7 @@
 @keyframes daySky {
   0% {
     background: rgba(#0a1629, 0.8);
+    // 正の回転角は色相の値を増加させるのに対し、負の回転角は色相の値を減少させます。
     filter: hue-rotate(0deg);
   }
 
